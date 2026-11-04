@@ -1,0 +1,13 @@
+{
+  "product": "Nomad Cold Brew",
+  "description": "Smooth cold coffee, brewed for 18 hours, delivered chilled",
+  "audience": "Busy students and office workers",
+  "price": "$2.50",
+  "offer": "Free delivery this week",
+  "cta": "Order now",
+  "contact": "nomadcoffee.example",
+  "language": "en",
+  "brand_color": "#14382d",
+  "accent_color": "#f2a93b",
+  "duration": 16
+}
