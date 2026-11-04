@@ -26,19 +26,21 @@
 ```
 
 ```bash
-ad-agent examples/brief.json
+ad-agent examples/brief.json --no-voice
 ```
 
+Output from a run without an API key, so the built-in template writes the script:
+
 ```
-✍️  Script (claude): 5 scenes
-    [   hook] Tired of bitter coffee?
-    [feature] Brewed for 18 hours
-    [feature] Delivered ice cold
-    [  offer] Free delivery this week
+✍️  Script (template): 4 scenes
+    [   hook] Still looking for Nomad Cold Brew?
+    [feature] Meet Nomad Cold Brew
+    [  offer] Only $2.50
     [    cta] Order now
-🎙️  Voiceover ready
-🎬 out/nomad-cold-brew.mp4  (17.4s, 1080×1920)
+🎬 out/nomad-cold-brew.mp4  (16.0s, 1080×1920)
 ```
+
+With `ANTHROPIC_API_KEY` set, Claude writes the script instead, usually 4 to 6 scenes. With `edge-tts` installed, each scene also gets a voiceover and its length is fitted to the audio.
 
 You get `out/nomad-cold-brew.mp4`, a `.png` thumbnail, and the `.script.json`. You can edit the script by hand and render it again with `--script`.
 
